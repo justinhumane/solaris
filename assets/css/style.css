@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Roboto+Condensed:wght@300&family=Secular+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: normal;
+}
+
+body {
+  background: linear-gradient(90deg, #0c164d 0%, #190b22 100%);
+  width: 100vw;
+  height: 100vh;
+  font-family: "Roboto Condensed", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  color: #fff;
+}
+
+h1,
+h3 {
+  font-family: "Secular One", sans-serif;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: "Lora", serif;
+  color: #ffd029;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 3.75rem;
+  letter-spacing: 0.3375rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  letter-spacing: 0.9rem;
+}
+
+p {
+  line-height: 170%;
+  font-size: 1.125rem;
+}
+
+header {
+  margin: 4.5rem 4.25rem 0 0;
+}
+
+header > * {
+  text-align: right;
+}
+
+footer {
+  margin-bottom: 4.14rem;
+  display: flex;
+  justify-content: center;
+}
+
+.bodies {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 4.25rem;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 100%;
+}
+
+.bodies > * {
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.solen {
+  background: #ffd029;
+  width: 79.875rem;
+  height: 79.875rem;
+  margin-left: -68.065rem;
+  box-shadow: 0px 0px 250px 0px rgba(255, 208, 41, 0.2);
+}
+
+.merkurius {
+  background: #888888;
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+.venus {
+  background: #e7cdcd;
+  width: 1.625rem;
+  height: 1.625rem;
+}
+
+.jorden {
+  background: #428ed4;
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.mars {
+  background: #ef5f5f;
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+.jupiter {
+  background: #e29468;
+  width: 11.75rem;
+  height: 11.75rem;
+}
+
+.saturnus {
+  background: #c7aa72;
+  width: 9rem;
+  height: 9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.saturnus::before {
+  content: "";
+  width: 13.63944rem;
+  height: 0.34381rem;
+  background: rgba(255, 255, 255, 0.4);
+  transform: rotate(-30deg);
+  border-radius: 100%;
+  position: absolute;
+}
+
+.uranus {
+  background: #c9d4f1;
+  width: 4.125rem;
+  height: 4.125rem;
+}
+
+.neptunus {
+  background: #7a91a7;
+  width: 4.125rem;
+  height: 4.125rem;
+}
+
+.modal {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background: linear-gradient(90deg, #0c164d 0%, #190b22 100%);
+}
+
+.hidden {
+  display: none;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  border-radius: 100%;
+  padding: 1.5rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.big {
+  width: 79.875rem;
+  height: 79.875rem;
+  left: -68.065rem;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  border-radius: 100%;
+  z-index: 1;
+}
+
+.stora-solen {
+  background: rgb(255, 208, 41);
+  box-shadow: 0 0 0 3.25rem rgba(255, 208, 41, 0.1),
+    0 0 0 6.37rem rgba(255, 208, 41, 0.06);
+}
+
+.stora-merkurius {
+  background: rgb(136, 136, 136);
+  box-shadow: 0 0 0 3.25rem rgba(136, 136, 136, 0.1),
+    0 0 0 6.37rem rgba(136, 136, 136, 0.06);
+}
+
+.stora-venus {
+  background: rgb(231, 205, 205);
+  box-shadow: 0 0 0 3.25rem rgba(231, 205, 205, 0.1),
+    0 0 0 6.37rem rgba(231, 205, 205, 0.06);
+}
+
+.stora-jorden {
+  background: #428ed4;
+  box-shadow: 0 0 0 3.25rem rgba(66, 142, 212, 0.1),
+    0 0 0 6.37rem rgba(66, 142, 212, 0.06);
+}
+
+.stora-mars {
+  background: rgb(239, 95, 95);
+  box-shadow: 0 0 0 3.25rem rgba(239, 95, 95, 0.1),
+    0 0 0 6.37rem rgba(239, 95, 95, 0.06);
+}
+
+.stora-jupiter {
+  background: rgb(226, 148, 104);
+  box-shadow: 0 0 0 3.25rem rgba(226, 148, 104, 0.1),
+    0 0 0 6.37rem rgba(226, 148, 104, 0.06);
+}
+
+.stora-saturnus {
+  background: rgb(199, 170, 114);
+  box-shadow: 0 0 0 3.25rem rgba(199, 170, 114, 0.1),
+    0 0 0 6.37rem rgba(199, 170, 114, 0.06);
+}
+
+.stora-uranus {
+  background: rgb(201, 212, 241);
+  box-shadow: 0 0 0 3.25rem rgba(201, 212, 241, 0.1),
+    0 0 0 6.37rem rgba(201, 212, 241, 0.06);
+}
+
+.stora-neptunus {
+  background: rgb(122, 145, 167);
+  box-shadow: 0 0 0 3.25rem rgba(122, 145, 167, 0.1),
+    0 0 0 6.37rem rgba(122, 145, 167, 0.06);
+}
+
+.star {
+  background-color: #fff;
+  filter: blur(2px);
+  position: absolute;
+}
+
+.details {
+  max-width: 40rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+}
+
+aside {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem 0;
+  padding: 2rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.zocom {
+  position: absolute;
+  bottom: 4.33rem;
+}
